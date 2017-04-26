@@ -1,0 +1,1 @@
+wait lang gd third, ga guba guba pa akon nga set up sa android -.-
