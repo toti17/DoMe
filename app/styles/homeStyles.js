@@ -21,6 +21,7 @@ var styles = StyleSheet.create({
 
   top1: {
     flex: 1,
+justifyContent:'center',
     flexDirection: 'row',
   },
 
@@ -30,9 +31,12 @@ var styles = StyleSheet.create({
   },
 
   header1: {
-    flex: 1,
+    flex:1,
+    alignItems: 'center', 
   },
-
+  header2:{
+    alignItems: 'flex-start', 
+  },
   bottomContainer: {
     flex: 12,
     flexDirection: 'column',
@@ -40,12 +44,17 @@ var styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
 
+  addIcon: {
+    paddingLeft: 10,
+    marginTop: 12,
+  },
+
   homeText: {
     fontWeight: 'bold',
     color: '#FFFFFF',
     fontSize: 20,
     textAlign: 'center',
-    marginTop: 5,
+    marginTop: 6,
   },
   
 });

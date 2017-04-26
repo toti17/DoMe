@@ -35,13 +35,20 @@ class Home extends Component {
         <View style={styles.parent}> 
           <View style={styles.topContainer}>
             <View style={styles.top1}>
+				<View style={styles.header2}>
+					<TouchableOpacity onPress={this.navigate.bind(this, "addCategory")}>
+						<View style={styles.addIcon} >
+							<Icon name="plus" size={20} color="white" />
+						</View>
+					</TouchableOpacity>              
+				</View>
 
-              <View style={styles.header1}><Text style={styles.homeText}>DO ME !</Text></View>
+	            <View style={styles.header1}><Text style={styles.homeText}>DO ME !</Text></View>
             </View>
           </View>
           
           <View style={styles.bottomContainer}>
-			  <Icon name="plus" size={20} />
+			  
 			<CheckBox
 			    style={{padding: 10}}
 			    onClick={()=>this.onClick(data)}
