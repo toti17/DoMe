@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 import Home from './Home.js';
+
 export default class DoMe extends Component {
 
   constructor(props){
