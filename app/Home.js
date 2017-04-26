@@ -5,15 +5,13 @@ import {
   StyleSheet,
   ListView,
   Text,
-  Button,
-  Alert,
   View,
   Navigator,
   AsyncStorage,
-  TouchableHighlight,
   TouchableOpacity
 } from 'react-native';
 
+import CheckBox from 'react-native-check-box'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './styles/homeStyles.js';
 class Home extends Component {
@@ -34,16 +32,31 @@ class Home extends Component {
 
 	render() {
 		return (	
-      <View style={styles.parent}> 
+        <View style={styles.parent}> 
           <View style={styles.topContainer}>
             <View style={styles.top1}>
+
               <View style={styles.header1}><Text style={styles.homeText}>DO ME !</Text></View>
             </View>
           </View>
           
           <View style={styles.bottomContainer}>
+			  <Icon name="plus" size={20} />
+			<CheckBox
+			    style={{padding: 10}}
+			    onClick={()=>this.onClick(data)}
+			    isChecked={false}
+			    rightText={'lol'}
+			/>
+			<CheckBox
+			    style={{padding: 10}}
+			    onClick={()=>this.onClick(data)}
+			    isChecked={false}
+			    rightText={'lol'}
+			/>
+
           </View>
-      </View>
+        </View>
 	  	);
 	}	
 }
